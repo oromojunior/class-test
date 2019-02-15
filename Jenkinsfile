@@ -13,7 +13,9 @@ node {
        
     }
 
-
+stage('Apply changes to the environment')
+    sh "ls-l"
+    sh "php-s localhost:5000"
 
 }
 } catch(Error|Exception e) {
